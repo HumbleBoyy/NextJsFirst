@@ -1,11 +1,22 @@
 "use client"
 import {StudentType } from "@/types/StudentType"
-import { useRouter } from "next/navigation"
+import { usePathname, useRouter } from "next/navigation"
 import { FC } from "react"
 
 
 export const MainCard:FC<{item:StudentType}> = ({item}) =>  {
   const router = useRouter()
+  const pathname = usePathname()
+
+
+  const handleClick = (id:string):any => {
+      if(pathname !== `/students/${id}`){
+         router.push(`/students/${id}`)
+      }else{
+        router.push(`/students`)
+      }
+  }
+
   return (
     <div className='border-2 rounded-md  p-5 w-[400px]'>
     <div className="mb-4 grid grid-cols-[25px_1fr] items-start pb-4 last:mb-0 last:pb-0" >
@@ -43,7 +54,7 @@ export const MainCard:FC<{item:StudentType}> = ({item}) =>  {
         </p>
       </div>
     </div>
-    <button onClick={()=> router.push(`/students/${item.id}`)} className="bg-blue-500 w-full rounded-md p-2 text-[20px] font-medium cursor-pointer">More</button>
+    <button onClick={()=> handleClick(item.id)} className={`${pathname === `/students/${item.id}` ? "bg-red-500" : "bg-blue-500"} w-full rounded-md p-2 text-[20px] font-medium cursor-pointer`}>{pathname === `/students/${item.id}` ? "Cancel" : "More"}</button>
 </div>
 )
 }
