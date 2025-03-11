@@ -1,0 +1,36 @@
+{
+    "groups":[
+        {
+            "id":"1",
+            "name":"Frontend React JS N77",
+            "mainTeacher":"Nurillo Suyunboyev",
+            "supportTeacher":"Isroil Omonjonov",
+            "lessonTime":"19:30"
+        },
+        {
+            "id":"2",
+            "name":"Web Practicum",
+            "mainTeacher":"Muhammadxon Najimov",
+            "supportTeacher":"Abdurahmon",
+            "lessonTime":"09:00"
+        }
+    ],
+    "students":[
+        {
+            "id":"1",
+            "name":"Asadbek Abdurahmonov",
+            "groupId":"1",
+            "groupName":"Frontend React JS N77",
+            "phoneNumber":"+998901233223",
+            "email":"asadbek@gmail.com"
+        },
+        {
+            "id":"2",
+            "name":"Valijon Quvondiqov",
+            "groupId":"2",
+            "groupName":"Web Practicum",
+            "phoneNumber":"+998901233223",
+            "email":"valijon@gmail.com"
+        }
+    ]
+}
