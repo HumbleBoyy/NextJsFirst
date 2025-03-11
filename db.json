@@ -9,7 +9,7 @@
         },
         {
             "id":"2",
-            "name":"Web Practicum",
+            "name":"Web Practicum S77",
             "mainTeacher":"Muhammadxon Najimov",
             "supportTeacher":"Abdurahmon",
             "lessonTime":"09:00"
@@ -22,15 +22,17 @@
             "groupId":"1",
             "groupName":"Frontend React JS N77",
             "phoneNumber":"+998901233223",
-            "email":"asadbek@gmail.com"
+            "email":"asadbek@gmail.com",
+            "stack":"Frontend"
         },
         {
             "id":"2",
             "name":"Valijon Quvondiqov",
             "groupId":"2",
-            "groupName":"Web Practicum",
+            "groupName":"Web Practicum S77",
             "phoneNumber":"+998901233223",
-            "email":"valijon@gmail.com"
+            "email":"valijon@gmail.com",
+            "stack":"Frontend"
         }
     ]
 }
