@@ -6,7 +6,6 @@ import React from 'react'
 
 const Groups = () => {
   const groupsList = getRequest("/groups");
-  console.log(groupsList)
   return (
     <div className='flex flex-wrap justify-center gap-10 mt-10'>
        {groupsList.map((item:GroupType, index:number)=>  <SecondaryCard key={index} item={item}/>)}

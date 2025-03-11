@@ -34,10 +34,10 @@ export const SecondaryCard:FC<{item:GroupType}> = ({item}) =>  {
       <span className="flex h-2 w-2 translate-y-1 rounded-full bg-sky-500" />
       <div className="space-y-1">
         <p className="text-xl font-medium leading-none">
-          {item.lessonTime}
+          Lesson Time
         </p>
         <p className="text-md font-medium leading-none">
-          Time
+          {item.lessonTime}
         </p>
       </div>
     </div>
