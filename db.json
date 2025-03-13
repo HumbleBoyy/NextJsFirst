@@ -5,14 +5,16 @@
             "name":"Frontend React JS N77",
             "mainTeacher":"Nurillo Suyunboyev",
             "supportTeacher":"Isroil Omonjonov",
-            "lessonTime":"19:30"
+            "lessonTime":"19:30",
+            "groupId":"1"
         },
         {
             "id":"2",
             "name":"Web Practicum S77",
             "mainTeacher":"Muhammadxon Najimov",
             "supportTeacher":"Abdurahmon",
-            "lessonTime":"09:00"
+            "lessonTime":"09:00",
+            "groupId":"2"
         }
     ],
     "students":[
@@ -32,6 +34,42 @@
             "groupName":"Web Practicum S77",
             "phoneNumber":"+998901233223",
             "email":"valijon@gmail.com",
+            "stack":"Frontend"
+        },
+        {
+            "id":"3",
+            "name":"Tom Jerry",
+            "groupId":"2",
+            "groupName":"Web Practicum S77",
+            "phoneNumber":"+998901233223",
+            "email":"valijon@gmail.com",
+            "stack":"Frontend"
+        },
+        {
+            "id":"4",
+            "name":"Kane Jane",
+            "groupId":"1",
+            "groupName":"Frontend React JS N77",
+            "phoneNumber":"+998901233223",
+            "email":"asadbek@gmail.com",
+            "stack":"Frontend"
+        },
+        {
+            "id":"5",
+            "name":"Lama Lane",
+            "groupId":"1",
+            "groupName":"Frontend React JS N77",
+            "phoneNumber":"+998901233223",
+            "email":"asadbek@gmail.com",
+            "stack":"Frontend"
+        },
+        {
+            "id":"6",
+            "name":"Hello Karma",
+            "groupId":"2",
+            "groupName":"Frontend React JS N77",
+            "phoneNumber":"+998901233223",
+            "email":"asadbek@gmail.com",
             "stack":"Frontend"
         }
     ]

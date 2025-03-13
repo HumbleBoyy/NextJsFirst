@@ -4,16 +4,17 @@ import { usePathname, useRouter } from "next/navigation"
 import { FC } from "react"
 
 
-export const MainCard:FC<{item:StudentType}> = ({item}) =>  {
+export const MainCardSecond:FC<{item:StudentType, groupId:string}> = ({item,groupId}) =>  {
   const router = useRouter()
   const pathname = usePathname()
 
 
   const handleClick = (id:string):any => {
-      if(pathname !== `/students/${id}`){
-         router.push(`/students/${id}`)
+      if(pathname !== `/groups/${groupId}/${id}`){
+         router.push(`/groups/${groupId}/${id}`)
+         console.log(groupId)
       }else{
-        router.push(`/students`)
+        router.push(`/groups`)
       }
   }
 
@@ -38,7 +39,6 @@ export const MainCard:FC<{item:StudentType}> = ({item}) =>  {
         </p>
       </div>
     </div>
-  {pathname === `/students/${item.id}` && <>
   <div className="mb-4 grid grid-cols-[25px_1fr] items-start pb-4 last:mb-0 last:pb-0" >
       <span className="flex h-2 w-2 translate-y-1 rounded-full bg-sky-500" />
       <div className="space-y-1">
@@ -55,8 +55,8 @@ export const MainCard:FC<{item:StudentType}> = ({item}) =>  {
         </p>
       </div>
     </div>
-  </>}
-    <button onClick={()=> handleClick(item.id)} className={`${pathname === `/students/${item.id}` ? "bg-red-500" : "bg-blue-500"} w-full rounded-md p-2 text-[20px] font-medium cursor-pointer`}>{pathname === `/students/${item.id}` ? "Back To" : "More"}</button>
+
+    <button onClick={()=> handleClick(item.id)} className={`${pathname === `/groups/${groupId}/${item.id}` ? "bg-red-500" : "bg-blue-500"} w-full rounded-md p-2 text-[20px] font-medium cursor-pointer`}>{pathname === `/groups/${groupId}/${item.id}` ? "Back To" : "More"}</button>
     </div>
 )
 }
