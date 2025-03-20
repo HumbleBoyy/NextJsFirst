@@ -14,7 +14,7 @@ const SingleGroup = () => {
   return (
     <>
       <h2 className='mx-auto text-center font-bold text-[35px] mt-5'>Students of the Group</h2>
-      <div className='flex justify-center items-center gap-5 mt-10'>
+        <div className='flex justify-center items-center gap-5 mt-10'>
         {getStudents.map((item: StudentType, index: number) => <MainCardSecond key={index} item={item} groupId={id} />)}
       </div>
     </>
